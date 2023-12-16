@@ -33,9 +33,10 @@ font-family: 'Bree Serif', serif;
     height: 45px;
 }
 .all-content{
-    /* height: 100vh; */
+    min-height: 100% ;
     background-color: #F7ECDE;
     position: relative;
+    
 }
 .content{
     position: relative;
@@ -90,7 +91,7 @@ font-family: 'Bree Serif', serif;
     background-color: rgb(0 0 0 / 50%);
     top: 0;
     left: 0;
-    bottom: -20px;
+    bottom: 0;
     right: 0;
 }
 .layer{
