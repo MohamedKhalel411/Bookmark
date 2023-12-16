@@ -40,7 +40,7 @@ function displayBook(){
         <tr>
                         <td>${i+1}</td>
                         <td>${bookContainer[i].name}</td>
-                        <td><button id="visitBtn" class="btn text-white"> <i class="fa-solid fa-eye pe-2"></i><a target="_blank" class="text-decoration-none text-white" href="${siteUrlInput.value}">Visit</a></button></td>
+                        <td><a id="visitBtn" target="_blank" class="text-decoration-none btn text-white" href="${siteUrlInput.value}"><i class="fa-solid fa-eye pe-2"></i>Visit</a></td>
                         <td><button onclick="deleteBook(${i})" id="deleteBtn" class="btn text-white"><i class="fa-solid fa-trash-can pe-2"></i>Delete</button></td>
                     </tr>
         `
@@ -65,9 +65,31 @@ function validateSiteName(){
     return regex.test(bookMrakNameInput.value);
 }
 function validateSiteUrl(){
-    var regex =/^(https:\/\/)?\w{1,}\.com$/;
+    var regex =/^(https?:\/\/)?(w{3}\.)?\w+\.\w{2,}\/?(:\d{2,5})?(\/\w+)*$/;
     return regex.test(siteUrlInput.value)
 }
 function exitValidationInfo(){
     validationInfo.classList.replace("d-block","d-none")
+}
+
+function onTypingValidateName(){
+    if(validateSiteName() ==true)
+    {
+        bookMrakNameInput.classList.replace("non-valid","valid")
+        
+    }
+    else{
+        bookMrakNameInput.classList.add("non-valid")
+        
+    }
+}
+
+function onTypingValidateUrl(){
+    if(validateSiteUrl()==true)
+    {
+        siteUrlInput.classList.replace("non-valid","valid")
+    }
+    else{
+        siteUrlInput.classList.add("non-valid")
+    }
 }
