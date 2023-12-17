@@ -135,7 +135,7 @@ body{
     cursor: pointer;
 }
 
-.non-valid:focus{
+/* .non-valid:focus{
     border-color: red;
     box-shadow: 1px 0px 1px 5px rgba(255, 0, 0, 0.4);
 }
@@ -143,7 +143,7 @@ body{
 .isvalid:focus{
     border-color: lightgreen;
     box-shadow: 1px 0px 1px 5px lightgreen;
-}
+} */
 @media screen and (max-width:600px) {
     .layer{
         width: 80%;

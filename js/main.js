@@ -74,11 +74,11 @@ function exitValidationInfo(){
 function onTypingValidateName(){
     if(validateSiteName() ==true)
     {
-        bookMrakNameInput.classList.replace("non-valid","isvalid")
+        bookMrakNameInput.classList.replace("is-invalid","is-valid")
         
     }
     else{
-        bookMrakNameInput.classList.replace("isvalid","non-valid")
+        bookMrakNameInput.classList.replace("is-valid","is-invalid")
         
     }
 }
@@ -86,9 +86,9 @@ function onTypingValidateName(){
 function onTypingValidateUrl(){
     if(validateSiteUrl()==true)
     {
-        siteUrlInput.classList.replace("non-valid","isvalid")
+        siteUrlInput.classList.replace("is-invalid","is-valid")
     }
     else{
-        siteUrlInput.classList.replace("isvalid","non-valid")
+        siteUrlInput.classList.replace("is-valid","is-invalid")
     }
 }
