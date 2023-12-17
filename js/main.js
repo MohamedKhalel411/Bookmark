@@ -59,13 +59,12 @@ function clearForm(){
     bookMrakNameInput.value="";
     siteUrlInput.value ="";
 }
-
 function validateSiteName(){
     var regex =/^(\w){3,}(\s+\w+)*$/;
     return regex.test(bookMrakNameInput.value);
 }
 function validateSiteUrl(){
-    var regex =/^((https?|ftp):\/\/)?(?:www\.)?[a-zA-Z0-9-]+(?:\.[a-zA-Z]{2,})+(?:\/[^\/\s]*)*$/;
+    var regex =/^((https?|http?|Https?|ftp):\/\/)?(?:www\.)?[a-zA-Z0-9-]+(?:\.[a-zA-Z]{2,})+(?:\/[^\/\s]*)*$/;
     return regex.test(siteUrlInput.value)
 }
 function exitValidationInfo(){
