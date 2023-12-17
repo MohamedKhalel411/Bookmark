@@ -12,6 +12,9 @@ font-family: 'Pacifico', cursive;
 font-family: 'Righteous', sans-serif;
 font-family: 'Bree Serif', serif;
 }
+*::selection{
+    background-color:#FEC260 ;
+}
 body{
     background-color: #F7ECDE;
     height: 100vh;
@@ -78,6 +81,7 @@ body{
 }
 #visitBtn{
     background-color: #9eb23b;
+    
 }
 #visitBtn:hover{
     background-color: #8a9e23;
