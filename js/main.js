@@ -40,7 +40,7 @@ function displayBook(){
         <tr>
                         <td>${i+1}</td>
                         <td>${bookContainer[i].name}</td>
-                        <td><a id="visitBtn" target="_blank" class="text-decoration-none btn text-white" href="${bookContainer[i].url}"><i class="fa-solid fa-eye pe-2"></i>Visit</a></td>
+                        <td class="visit-class"><a id="visitBtn" target="_blank" class="text-decoration-none btn text-white" href="${bookContainer[i].url}"><i class="fa-solid fa-eye pe-2"></i>Visit</a></td>
                         <td><button onclick="deleteBook(${i})" id="deleteBtn" class="btn text-white"><i class="fa-solid fa-trash-can pe-2"></i>Delete</button></td>
                     </tr>
         `

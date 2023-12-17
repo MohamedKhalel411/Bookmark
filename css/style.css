@@ -149,10 +149,32 @@ body{
         width: 80%;
     }
     .container{
-        width: 80%;
+        width: 100%;
     }
     .content h2{
         font-size: 22px;
         padding-bottom: 20px;
+    }
+    #visitBtn{
+        font-size: 10px;
+    }
+    #deleteBtn{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:320px) {
+    #visitBtn{
+        font-size: 6px;
+        padding: 10px 10px;
+    }
+    #deleteBtn{
+        font-size: 5px;
+        padding: 10px 10px;
+    }
+    #visitBtn a{
+        font-size: 20px;
+    }
+    .visit-class{
+        padding: 8px 0px !important;
     }
 }
